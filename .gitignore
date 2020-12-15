@@ -6,8 +6,9 @@ node_modules/
 # production
 /build
 
+Important.txt.txt
 .history
-.debug.log
+debug.log*
 
 # misc
 .DS_Store
