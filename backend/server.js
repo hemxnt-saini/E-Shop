@@ -2,15 +2,19 @@ import express from 'express'
 import dotenv from 'dotenv'
 import connectDB from './config/db.js'
 import productRoutes from './routes/productRoutes.js'
+import userRoutes from './routes/userRoutes.js'
 import {notFound,errorHandler} from './middleware/errorMiddleware.js'
 
-const app = express();
 
 //ENV Access
 dotenv.config()
 
 //DB Connect
 connectDB()
+
+const app = express()
+//Body Parse MW
+app.use(express.json())
 
 //Home Route
 app.get('/', (req,res) => {
@@ -19,6 +23,7 @@ app.get('/', (req,res) => {
 
 //Routes
 app.use('/api/products', productRoutes)
+app.use('/api/users', userRoutes)
 
 //Middlewares
 app.use(notFound)
