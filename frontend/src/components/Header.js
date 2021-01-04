@@ -38,11 +38,9 @@ const Header = () => {
                                     Logout
                                 </NavDropdown.Item>
                             </NavDropdown>  
-                        ) : (  
-                        <LinkContainer to="/login">
+                        ) : <LinkContainer to="/login">
                         <Nav.Link><i className="fa fa-user" /> Sign In</Nav.Link>
                         </LinkContainer>
-                        )
                     }
                     </Nav>
                 </Navbar.Collapse>
