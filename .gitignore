@@ -6,7 +6,7 @@ node_modules/
 # production
 /build
 
-Important.txt.txt
+Important.txt
 .history
 debug.log*
 
