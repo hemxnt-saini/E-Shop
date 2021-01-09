@@ -110,5 +110,28 @@ const updateUserProfile = asyncHandler(async (req,res) => {
     }
 })
 
+//Get ALL USERS(ADMIN ONLY) 
+//GET /api/users
+//PRIVATE- Protected Route(Need Token)
+const getUsers = asyncHandler(async (req,res) => {
+    const users = await User.find({})
+    res.json(users)
+})
 
-export {authUser, getUserProfile, registerUser, updateUserProfile}   
+//Delete User(ADMIN ONLY) 
+//DELETE /api/users/:id
+//PRIVATE- Protected Route(Need Token)
+const deleteUser = asyncHandler(async (req,res) => {
+    const user = await User.findById(req.params.id)
+
+    if(user){
+        await user.remove()
+        res.json({message:'User Deleted'})
+    }else{
+        res.status(404)
+        throw new Error('User not found')
+    }
+})
+
+
+export {authUser, getUserProfile, registerUser, updateUserProfile, getUsers, deleteUser}   
