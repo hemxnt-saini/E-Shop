@@ -18,14 +18,14 @@
 
 ### Env Variables
 
-Create a .env file in then root and add the following
+Create a .env file in root and add the following parameters,
 
 ```
 NODE_ENV = development
 PORT = 5000
-MONGO_URI = your mongodb uri
-JWT_SECRET = 'abc123'
-PAYPAL_CLIENT_ID = your paypal client id
+MONGO_URI = Connection MongoURI
+JWT_SECRET = 'AnySecret'
+PAYPAL_CLIENT_ID =PayPal ClientID
 ```
 
 ### Install Dependencies (frontend & backend)
@@ -41,6 +41,9 @@ npm install
 ```
 # Run frontend (:3000) & backend (:5000)
 npm run dev
+
+#Run frontend only
+npm run client
 
 # Run backend only
 npm run server
