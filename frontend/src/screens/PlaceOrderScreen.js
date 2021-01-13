@@ -5,11 +5,20 @@ import {useDispatch,useSelector} from 'react-redux'
 import Message from '../components/Message'
 import CheckoutSteps from '../components/CheckoutSteps'
 import {createOrder} from '../actions/orderActions'
+import { ORDER_CREATE_RESET } from '../constants/orderConstants'
+import { USER_DETAILS_RESET } from '../constants/userConstants'
 
 const PlaceOrderScreen = ({history}) => {
     const dispatch = useDispatch()
 
     const cart = useSelector(state => state.cart)
+
+    if (!cart.shippingAddress.address) {
+        history.push('/shipping')
+      } else if (!cart.paymentMethod) {
+        history.push('/payment')
+      }
+
 
     cart.itemsPrice = cart.cartItems.reduce((acc,item) => acc + item.price * item.qty, 0).toFixed(2)
     cart.shippingPrice = cart.itemsPrice > 100 ? 0 : 100
@@ -23,6 +32,8 @@ const PlaceOrderScreen = ({history}) => {
     useEffect(() =>{
         if(success){
             history.push(`/order/${order._id}`)
+            dispatch({ type: USER_DETAILS_RESET })
+            dispatch({ type: ORDER_CREATE_RESET })
         }
         // eslint-disable-next-line
     },[history,success])

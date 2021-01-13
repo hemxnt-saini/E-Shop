@@ -26,7 +26,7 @@ const ProductListScreen = ({history}) => {
     useEffect(() =>{
         dispatch({ type: PRODUCT_CREATE_RESET})
 
-        if(!userInfo.isAdmin){
+        if(!userInfo || !userInfo.isAdmin){
             history.push('/login')
         }
 
@@ -37,15 +37,17 @@ const ProductListScreen = ({history}) => {
         }
     },[dispatch,history,userInfo,successDelete, successCreate, createdProduct])
 
-const createProductHandler = ()=>{
-    dispatch(createProduct())
-}    
 
 const deleteHandler = (id) => {
     if(window.confirm('Are you sure')){
         dispatch(deleteProduct(id))
     }
 }
+
+const createProductHandler = ()=>{
+    dispatch(createProduct())
+}    
+
 
     return (
         <>

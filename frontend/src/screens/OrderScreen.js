@@ -49,7 +49,7 @@ const OrderScreen = ({match, history}) => {
             document.body.appendChild(script)
         }
 
-        if(!order || successPay || successDeliver){
+        if(!order || successPay || successDeliver || order._id !== orderId){
             dispatch({ type:ORDER_PAY_RESET})
             dispatch({ type:ORDER_DELIVER_RESET})
             dispatch(getOrderDetails(orderId))
@@ -72,7 +72,7 @@ const OrderScreen = ({match, history}) => {
     }
 
     return loading ? <Loader /> : 
-    error ? <Message variant ="danger">{error}</Message> :
+           error ? <Message variant ="danger">{error}</Message> :
     <>
         <h1>Order {order._id}</h1>
         <Row>
