@@ -1,60 +1,23 @@
 # E-Shop eCommerce Application
 
+## About
+  #### Full Stack E-Commerce Application developed using MERN & deployed on Heroku.
+
 ## Features
 
-- Full featured shopping cart
-- Product reviews and ratings
-- Top products carousel
-- Product pagination
-- Product search feature
-- User profile with orders
-- Admin product management
-- Admin user management
-- Admin Order details page
-- Mark orders as delivered option
-- Checkout process (shipping, payment method, etc)
-- PayPal / credit card integration
-- Database seeder (products & users)
+- Functional Shopping Cart.
+- PayPal & Credit/Debit Payment Gateway.
+- Admin Functionalities.
+  - Users List Screen - Update User & Delete Functionality
+  - Products List Screen - Create Product & Delete Functionality
+  - Orders List Screen - Screen for all Orders to be delivered
+- Product Reviews and Ratings.
+- Product Pagination
+- Top Rated Products Carousel.
+- Product Search Feature with name filter.
+- LoggedIn User Profile with Order Status.
+- Checkout Process (Shipping,Order Details, Payment method)
+- Seeding Database with Sample data.
 
-### Env Variables
-
-Create a .env file in root and add the following parameters,
-
-```
-NODE_ENV = development
-PORT = 5000
-MONGO_URI = Connection MongoURI
-JWT_SECRET = 'AnySecret'
-PAYPAL_CLIENT_ID =PayPal ClientID
-```
-
-### Install Dependencies (frontend & backend)
-
-```
-npm install
-cd frontend
-npm install
-```
-
-### Run
-
-```
-# Run frontend (:3000) & backend (:5000)
-npm run dev
-
-#Run frontend only
-npm run client
-
-# Run backend only
-npm run server
-```
-
-## Build & Deploy HEROKU
-
-```
-# Create frontend prod build
-cd frontend
-npm run build
-```
 
 
