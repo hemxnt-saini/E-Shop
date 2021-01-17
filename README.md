@@ -1,26 +1,30 @@
 # E-Shop eCommerce Application
 
-***ABOUT***
+### ABOUT
+***
   #### Full Stack E-Commerce Application developed using MERN & deployed on Heroku.
-
-***FEATURES***
+  
+  
+### FEATURES
+***
 
 ##### ➤ Functional Shopping Cart.
-##### ➤ PayPal & Credit/Debit Payment Gateway.
-##### ➤ Admin Functionalities.
+>##### ➤ PayPal & Credit/Debit Payment Gateway.
+>##### ➤ Admin Functionalities.
     -➤ Users List Screen: Update User & Delete Functionality
     -➤ Products List Screen: Create Product & Delete Functionality
     -➤ Orders List Screen: Screen for all Orders to be delivered
-##### ➤ Product Reviews and Ratings.
-##### ➤ Product Pagination
-##### ➤ Top Rated Products Carousel.
-##### ➤ Product Search Feature with name filter.
-##### ➤ LoggedIn User Profile with Order Status.
-##### ➤ Checkout Process (Shipping,Order Details, Payment method)
-##### ➤ Seeding Database with Sample data.
+>##### ➤ Product Reviews and Ratings.
+>##### ➤ Product Pagination
+>##### ➤ Top Rated Products Carousel.
+>##### ➤ Product Search Feature with name filter.
+>##### ➤ LoggedIn User Profile with Order Status.
+>##### ➤ Checkout Process (Shipping,Order Details, Payment method)
+>##### ➤ Seeding Database with Sample data.
 
 
-***SPECIFICATIONS***
+### SPECIFICATIONS
+***
 
   >##### ✱ Backend is functional with Admin & Protect Middleware for access Protected Routes.
   >##### ✱ Frontend Centrilized with Redux Store.
@@ -33,7 +37,8 @@
   >##### ✱ Application is Responsive for all Screen types.
   >##### ✱ Deployed using HEROKU CLI with postBuild Script.
 
-## SCRIPTS
+### SCRIPTS
+***
 ```
   ☛ npm run client - Run Frontend 
   ☛ npm run server - Run Backend 
