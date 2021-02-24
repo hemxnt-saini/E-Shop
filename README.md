@@ -1,11 +1,11 @@
 # E-Shop eCommerce Application
 
-### ABOUT
+### ABOUT- 
 ***
-  #### Full Stack E-Commerce Application developed using MERN & deployed on Heroku.
+  #### A Full Stack E-Commerce Application developed using MERN Stack deployed on Heroku. Backend is functional with Admin & Protect Middleware for access Protected Routes. Frontend Centralized with Redux Store.
   
   
-### FEATURES
+### FEATURES-
 ***
 
 ##### ➤ Functional Shopping Cart.
@@ -23,7 +23,7 @@
 >##### ➤ Seeding Database with Sample data.
 
 
-### SPECIFICATIONS
+### SPECIFICATIONS-
 ***
 
   >##### ✱ Backend is functional with Admin & Protect Middleware for access Protected Routes.
@@ -37,7 +37,7 @@
   >##### ✱ Application is Responsive for all Screen types.
   >##### ✱ Deployed using HEROKU CLI with postBuild Script.
 
-### SCRIPTS
+### SCRIPTS-
 ***
 ```
   ☛ npm run client - Run Frontend 
