@@ -8,12 +8,12 @@
 ### FEATURES-
 ***
 
-##### ➤ Functional Shopping Cart.
+>##### ➤ Functional Shopping Cart.
 >##### ➤ PayPal & Credit/Debit Payment Gateway.
 >##### ➤ Admin Functionalities.
-    -➤ Users List Screen: Update User & Delete Functionality
-    -➤ Products List Screen: Create Product & Delete Functionality
-    -➤ Orders List Screen: Screen for all Orders to be delivered
+    ◦ Users List Screen: Update User & Delete Functionality
+    ◦ Products List Screen: Create Product & Delete Functionality
+    ◦ Orders List Screen: Screen for all Orders to be delivered
 >##### ➤ Product Reviews and Ratings.
 >##### ➤ Product Pagination
 >##### ➤ Top Rated Products Carousel.
@@ -42,5 +42,5 @@
 ```
   ☛ npm run client - Run Frontend 
   ☛ npm run server - Run Backend 
-  ☛ npm run dev - Run Both`
+  ☛ npm run dev - Run Both
 ```
