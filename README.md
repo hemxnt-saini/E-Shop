@@ -46,6 +46,7 @@
 ```
 
 ### ENV VARs- 
+***
 
 Create a .env file in then root and add the following
 
@@ -58,6 +59,7 @@ PAYPAL_CLIENT_ID = your paypal client id
 ```
 
 ## BUILD
+***
 
 ```
 cd frontend
@@ -65,6 +67,7 @@ npm run build
 ```
 
 ### SEEDING DATABASE
+***
 
 ```
 # Import data
