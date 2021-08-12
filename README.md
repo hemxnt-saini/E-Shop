@@ -36,6 +36,7 @@
   >##### ✱ Fully Featured Cart Functionality with quantity select & proceed.
   >##### ✱ Application is Responsive for all Screen types.
   >##### ✱ Deployed using HEROKU CLI with postBuild Script.
+  
 
 ### SCRIPTS-
 ***
@@ -47,9 +48,6 @@
 
 ### ENV VARs- 
 ***
-
-Create a .env file in then root and add the following
-
 ```
 NODE_ENV = development
 PORT = 5000
@@ -58,9 +56,8 @@ JWT_SECRET = 'abc123'
 PAYPAL_CLIENT_ID = your paypal client id
 ```
 
-## BUILD
+### BUILD
 ***
-
 ```
 cd frontend
 npm run build
@@ -68,7 +65,6 @@ npm run build
 
 ### SEEDING DATABASE
 ***
-
 ```
 # Import data
 npm run data:import
