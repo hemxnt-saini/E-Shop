@@ -45,7 +45,7 @@
   ☛ npm run dev - Run Both
 ```
 
-### Env Variables
+### ENV VARs- 
 
 Create a .env file in then root and add the following
 
@@ -57,17 +57,14 @@ JWT_SECRET = 'abc123'
 PAYPAL_CLIENT_ID = your paypal client id
 ```
 
-## Build & Deploy
+## BUILD
 
 ```
-# Create frontend prod build
 cd frontend
 npm run build
 ```
 
-### Seed Database
-
-You can use the following commands to seed the database with some sample users and products as well as destroy all data
+### SEEDING DATABASE
 
 ```
 # Import data
