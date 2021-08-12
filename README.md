@@ -11,9 +11,9 @@
 >##### ➤ Functional Shopping Cart.
 >##### ➤ PayPal & Credit/Debit Payment Gateway.
 >##### ➤ Admin Functionalities.
-    ◦ Users List Screen: Update User & Delete Functionality
-    ◦ Products List Screen: Create Product & Delete Functionality
-    ◦ Orders List Screen: Screen for all Orders to be delivered
+>##### ➤ Users List Screen: Update User & Delete Functionality
+>##### ➤ Products List Screen: Create Product & Delete Functionality
+>##### ➤ Orders List Screen: Screen for all Orders to be delivered
 >##### ➤ Product Reviews and Ratings.
 >##### ➤ Product Pagination
 >##### ➤ Top Rated Products Carousel.
@@ -43,4 +43,36 @@
   ☛ npm run client - Run Frontend 
   ☛ npm run server - Run Backend 
   ☛ npm run dev - Run Both
+```
+
+### Env Variables
+
+Create a .env file in then root and add the following
+
+```
+NODE_ENV = development
+PORT = 5000
+MONGO_URI = your mongodb uri
+JWT_SECRET = 'abc123'
+PAYPAL_CLIENT_ID = your paypal client id
+```
+
+## Build & Deploy
+
+```
+# Create frontend prod build
+cd frontend
+npm run build
+```
+
+### Seed Database
+
+You can use the following commands to seed the database with some sample users and products as well as destroy all data
+
+```
+# Import data
+npm run data:import
+
+# Destroy data
+npm run data:destroy
 ```
